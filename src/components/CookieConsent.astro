@@ -1,0 +1,17 @@
+---
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+---
+<script>
+    import { run } from 'vanilla-cookieconsent';
+    import { config } from './CookieConsentConfig';
+
+    // toggle custom black theme
+    if (document.documentElement.classList.contains('dark')) {
+        document.body.classList.add('cc--darkmode');
+    } else {
+        document.body.classList.remove('cc--darkmode');
+    }
+
+    run(config);
+    
+</script>
