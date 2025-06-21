@@ -1,5 +1,13 @@
 import type { CookieConsentConfig } from 'vanilla-cookieconsent';
 
+// Extend the Window interface to include the dataLayer object
+declare global {
+  interface Window {
+    dataLayer: Record<string, any>[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
 export const config: CookieConsentConfig = {
   guiOptions: {
     consentModal: {
@@ -25,17 +33,13 @@ export const config: CookieConsentConfig = {
             '<a href="https://marketingplatform.google.com/about/analytics/terms/es/" target="_blank">Google Analytics</a>',
           onAccept: () => {
             console.log('ga accepted');
-            // Google Analytics
-            const script = document.createElement('script');
-            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H4MF1PP2NB';
-            script.async = true;
-            document.head.appendChild(script);
-            (window as any).dataLayer = (window as any).dataLayer || [];
-            function gtag(...args: any[]) {
-            (window as any).dataLayer.push(args);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-H4MF1PP2NB');
+
+            window.gtag("consent", "update", {
+              ad_storage: "granted",
+              ad_user_data: "granted",
+              ad_personalization: "granted",
+              analytics_storage: "granted",
+            }); 
           },
           onReject: () => {
             console.log('ga rejected');

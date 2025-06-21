@@ -32,6 +32,36 @@ import Logo from '@/components/Logo.astro';
     }
     </script>
 
+    <script
+      is:inline
+      src="https://www.googletagmanager.com/gtag/js?id=G-H4MF1PP2NB"></script>
+    <script>
+      // We need a global definition to avoid type warnings
+      declare global {
+        interface Window {
+          dataLayer: Record<string, any>[];
+          gtag: (...args: any[]) => void;
+        }
+      }
+
+      // Initialize dataLayer
+      window.dataLayer = window.dataLayer || [];
+
+      // Define gtag function
+      window.gtag = function gtag(...args: any[]) {
+        window.dataLayer.push(arguments);
+      };
+
+      // Load GA4 with denied default consents
+      window.gtag("js", new Date());
+      window.gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+      window.gtag("config", "G-H4MF1PP2NB");
+    </script>
 	</head>
 	<body class="bg-white dark:bg-gray-900">
     <main>
