@@ -59,7 +59,7 @@ export const config: CookieConsentConfig = {
     translations: {
       es: {
           consentModal: {
-              title: "Hola viajero, es la hora de las galletas!",
+              title: "",
               description: "Este sitio web utiliza cookies para mejorar su experiencia de navegación y analizar el tráfico. Al hacer clic en 'Aceptar todo', consiente el uso de todas las cookies. Puede gestionar sus preferencias o rechazar las cookies no esenciales.",
               acceptAllBtn: "Aceptar todo",
               acceptNecessaryBtn: "Rechazar todo",
@@ -87,19 +87,14 @@ export const config: CookieConsentConfig = {
                       title: "Cookies Analíticas",
                       description: "Utilizamos las cookies para analizar el tráfico con Google Analytics.",
                       linkedCategory: "analytics"
-                  },
-                  {
-                      title: "Más información",
-                      description: "Para cualquier consulta relacionada con mi política de cookies y sus opciones, por favor <a class=\"cc__link\" href=\"#yourdomain.com\">contáctenos</a>."
                   }
               ]
           }
       },
       en: {
         consentModal: {
-          title: "Hello traveller, it's cookie time!",
-          description:
-            'This website uses cookies to enhance your browsing experience and analyze traffic. By clicking "Accept All", you consent to the use of all cookies. You can manage your preferences or reject non-essential cookies.',
+          title: "",
+          description: 'This website uses cookies to enhance your browsing experience and analyze traffic. By clicking "Accept All", you consent to the use of all cookies. You can manage your preferences or reject non-essential cookies.',
           acceptAllBtn: 'Accept all',
           acceptNecessaryBtn: 'Reject all',
           showPreferencesBtn: 'Manage preferences',
@@ -127,11 +122,7 @@ export const config: CookieConsentConfig = {
               title: 'Analytics Cookies',
               description: 'We use cookies to analyze traffic with Google Analytics.',
               linkedCategory: 'analytics',
-            },
-            {
-              title: 'More information',
-              description: 'For any query in relation to my policy on cookies and your choices, please <a class="cc__link" href="#yourdomain.com">contact me</a>.',
-            },
+            }
           ],
         },
       },

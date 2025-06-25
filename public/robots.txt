@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /privacy-policy
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sercomi.com/sitemap-index.xml
