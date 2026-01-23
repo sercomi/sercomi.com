@@ -3,6 +3,12 @@
 
 @theme {
     --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --color-brand-dark: #0c141d;
+    --color-brand-dark-alt: #162431;
+    --color-brand-primary: #176782;
+    --color-cyan-500: #06b6d4;
+    --color-indigo-500: #6366f1;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
