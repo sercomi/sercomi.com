@@ -1,10 +1,111 @@
 ---
 import Logo from "./Logo.astro";
+import NavLink from "./NavLink.astro";
+import Button from "./Button.astro";
 ---
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse" aria-label="Sercomi AI">
-      <Logo />
-    </a>
-</nav>
+<header
+  class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md dark:bg-gray-900/80 border-b border-gray-100 dark:border-gray-800"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo + Identity -->
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="flex-shrink-0">
+          <Logo className="h-10 w-10" />
+        </div>
+        <div
+          class="flex flex-col border-l border-gray-200 dark:border-gray-700 pl-3"
+        >
+          <span
+            class="text-xl font-bold text-gray-900 dark:text-white leading-tight"
+            >Sergi Comas</span
+          >
+          <span
+            class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400 font-bold"
+            >SENIOR SOFTWARE ENGINEER</span
+          >
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8">
+        <NavLink href="#capacidades">Capacidades</NavLink>
+        <NavLink href="#casos-de-uso">Casos de Uso</NavLink>
+        <NavLink href="#procesos">Procesos</NavLink>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:block">
+        <Button href="#contacto">Hablemos</Button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <!-- Hamburger Menu Icon -->
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden" id="mobile-menu">
+    <div
+      class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800"
+    >
+      <a
+        href="#capacidades"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        >Capacidades</a
+      >
+      <a
+        href="#casos-de-uso"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        >Casos de Uso</a
+      >
+      <a
+        href="#procesos"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        >Procesos</a
+      >
+      <div class="pt-4 pb-2">
+        <Button href="#contacto" class="w-full">Hablemos</Button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener("click", () => {
+      const expanded =
+        mobileMenuButton.getAttribute("aria-expanded") === "true";
+      mobileMenuButton.setAttribute("aria-expanded", (!expanded).toString());
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+</script>
