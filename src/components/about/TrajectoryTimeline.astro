@@ -34,10 +34,10 @@ const stages = [
         </div>
 
         <div class={`flex flex-col gap-2 transition-all duration-300 ${stage.active ? "p-4 -ml-4 rounded-xl bg-gray-50/80 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50" : ""}`}>
-          <h3 class={`text-lg font-bold leading-tight ${stage.active ? "text-cyan-700 dark:text-cyan-400" : "text-gray-900 dark:text-white"}`}>
+          <h3 class={`text-lg font-bold leading-tight font-display ${stage.active ? "text-cyan-700 dark:text-cyan-400" : "text-gray-900 dark:text-white"}`}>
             {stage.title}
           </h3>
-          <p class={`text-sm md:text-base leading-relaxed font-medium ${stage.active ? "text-gray-900 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
+          <p class={`text-sm md:text-base leading-relaxed font-body font-medium ${stage.active ? "text-gray-900 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
             {stage.description}
           </p>
         </div>
