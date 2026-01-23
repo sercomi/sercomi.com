@@ -3,7 +3,7 @@ import Button from "../Button.astro";
 ---
 
 <section
-    class="relative min-h-[85vh] flex items-center justify-center w-full px-6 lg:px-20 border-b border-gray-100 dark:border-gray-800 overflow-hidden bg-white dark:bg-gray-900"
+    class="relative min-h-[85vh] flex items-center justify-center w-full px-6 lg:px-20 border-b border-border-subtle dark:border-border-subtle-dark overflow-hidden bg-white dark:bg-gray-900"
 >
     <!-- Grid Background -->
     <div
@@ -27,12 +27,12 @@ import Button from "../Button.astro";
     >
         <!-- Availability Badge -->
         <div
-            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-sm"
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-border-subtle dark:border-border-subtle-dark bg-white/80 dark:bg-gray-800/80 backdrop-blur shadow-sm"
         >
             <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"
             ></span>
             <span
-                class="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest"
+                class="text-[10px] font-bold text-text-muted dark:text-text-muted-dark uppercase tracking-widest"
             >
                 Disponible para proyectos B2B
             </span>
@@ -40,17 +40,17 @@ import Button from "../Button.astro";
 
         <!-- Main Heading -->
         <h1
-            class="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-gray-900 dark:text-white font-sans"
+            class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-gray-900 dark:text-white font-display"
         >
             Construyo software sólido.<br />
-            <span class="text-cyan-700 dark:text-cyan-400"
+            <span class="text-brand-primary dark:text-cyan-400"
                 >Lo potencio con IA.</span
             >
         </h1>
 
         <!-- Subtitle -->
         <p
-            class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl font-normal leading-relaxed font-body"
+            class="text-lg md:text-xl text-text-description dark:text-text-description-dark max-w-2xl font-normal leading-relaxed font-body"
         >
             Soluciones escalables y automatización inteligente para optimizar tu
             negocio, desde la arquitectura hasta la implementación de LLMs.
@@ -76,26 +76,26 @@ import Button from "../Button.astro";
             class="pt-12 flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500"
         >
             <div
-                class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 font-bold tracking-tight"
+                class="flex items-center gap-2 text-sm text-text-muted dark:text-text-muted-dark font-bold tracking-tight"
             >
                 <span class="material-symbols-outlined text-lg">code</span>
                 Python / Go
             </div>
             <div
-                class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 font-bold tracking-tight"
+                class="flex items-center gap-2 text-sm text-text-muted dark:text-text-muted-dark font-bold tracking-tight"
             >
                 <span class="material-symbols-outlined text-lg">cloud</span>
                 AWS / Azure
             </div>
             <div
-                class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 font-bold tracking-tight"
+                class="flex items-center gap-2 text-sm text-text-muted dark:text-text-muted-dark font-bold tracking-tight"
             >
                 <span class="material-symbols-outlined text-lg">psychology</span
                 >
                 OpenAI / LangChain
             </div>
             <div
-                class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 font-bold tracking-tight"
+                class="flex items-center gap-2 text-sm text-text-muted dark:text-text-muted-dark font-bold tracking-tight"
             >
                 <span class="material-symbols-outlined text-lg">schema</span>
                 Docker / K8s

@@ -1,8 +1,11 @@
 # about Specification
 
-## Purpose
-TBD - created by archiving change create-about-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Purpose
+- **From**: TBD - created by archiving change create-about-page. Update Purpose after archive.
+- **To**: Formally defines the professional background and narrative of Sergi Comas, bridging technical depth with a clear vision for AI-driven engineering.
+
+## MODIFIED Requirements
+
 ### Requirement: About Page Accessibility
 The site MUST have a dedicated page at `/about` that details the professional background. All styling MUST use theme variables from the global design system.
 
@@ -37,6 +40,7 @@ The about page MUST provide a way to connect professionally. All styling MUST us
 - **Then** I should see a button with the text "Conectar en LinkedIn"
 - **And** all styling uses semantic theme variables
 
+## ADDED Requirements
 ### Requirement: Design System Consistency
 The about page MUST use only theme variables from the global design system and avoid hardcoded colors or font weights.
 
@@ -57,4 +61,3 @@ The about page MUST use only theme variables from the global design system and a
 - **Then** the about page uses the defined dark theme variables
 - **And** all text maintains proper contrast ratios
 - **And** interactive elements have clear dark mode states
-

@@ -1,8 +1,4 @@
-# header Specification
-
-## Purpose
-TBD - created by archiving change implement-header-nav. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
 ### Requirement: Identity Branding (Design Sample)
 The header MUST strictly follow the design branding: a blue square logo icon, followed by the name "Sergi Comas" and the title "SENIOR SOFTWARE ENGINEER". All styling MUST use theme variables from the global design system.
 
@@ -13,33 +9,7 @@ The header MUST strictly follow the design branding: a blue square logo icon, fo
 - Then "SENIOR SOFTWARE ENGINEER" is displayed in uppercase, smaller font
 - And all colors and fonts use theme variables (e.g., `text-brand-primary`, `font-display`)
 
-### Requirement: Sticky Positioning
-The header MUST remain fixed at the top of the viewport when scrolling.
-#### Scenario: Scrolling down the page
-- Given a user is on any page
-- When the user scrolls down
-- Then the header remains visible at the top of the window
-
-### Requirement: Navigation Links
-The header MUST provide links to "Capacidades", "Casos de Uso", and "Procesos".
-#### Scenario: Desktop Navigation
-- Given a desktop viewport (width > 768px)
-- Then the navigation links are displayed horizontally in the center of the header
-
-### Requirement: Call to Action Button
-The header MUST include a "Hablemos" button on the right side.
-#### Scenario: CTA Visibility
-- Given any device
-- Then the "Hablemos" button is clearly visible and styled as a primary action
-
-### Requirement: Mobile Layout
-The header MUST adapt to smaller screens using a mobile-friendly menu pattern.
-#### Scenario: Mobile Menu Toggle
-- Given a mobile viewport
-- Then navigation links are hidden by default
-- When the user clicks the menu toggle
-- Then the navigation menu becomes visible
-
+## ADDED Requirements
 ### Requirement: Design System Consistency
 The header MUST use only theme variables from the global design system and avoid hardcoded colors or font weights.
 
@@ -54,4 +24,3 @@ The header MUST use only theme variables from the global design system and avoid
 - Then the header uses the defined dark theme variables
 - And all text maintains proper contrast ratios
 - And interactive elements have clear dark mode states
-

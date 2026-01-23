@@ -20,24 +20,24 @@ const stages = [
 
 <div class="relative py-4 pl-2">
   <!-- Vertical Line -->
-  <div class="absolute left-[11px] top-6 bottom-6 w-[2px] bg-gray-200 dark:bg-gray-700"></div>
+  <div class="absolute left-[11px] top-6 bottom-6 w-[2px] bg-border-subtle dark:bg-border-subtle-dark"></div>
   <div class="flex flex-col gap-10">
     {stages.map((stage) => (
       <div class="relative pl-10 group">
         <!-- Circle Indicator -->
         <div class={`absolute left-0 top-1.5 h-6 w-6 rounded-full border-[3px] shadow-sm z-10 transition-colors duration-300 flex items-center justify-center
           ${stage.active 
-            ? "bg-cyan-700 dark:bg-cyan-500 border-cyan-100 dark:border-gray-900 ring-4 ring-cyan-700/20" 
-            : "border-white dark:border-gray-900 bg-gray-300 dark:bg-gray-700 group-hover:bg-cyan-700 dark:group-hover:bg-cyan-500"
+            ? "bg-brand-primary dark:bg-cyan-500 border-cyan-100 dark:border-gray-900 ring-4 ring-brand-primary/20" 
+            : "border-white dark:border-gray-900 bg-gray-300 dark:bg-gray-700 group-hover:bg-brand-primary dark:group-hover:bg-cyan-500"
           }`}>
           {stage.active && <span class="material-symbols-outlined text-white text-[14px] font-bold">check</span>}
         </div>
 
-        <div class={`flex flex-col gap-2 transition-all duration-300 ${stage.active ? "p-4 -ml-4 rounded-xl bg-gray-50/80 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50" : ""}`}>
-          <h3 class={`text-lg font-bold leading-tight font-display ${stage.active ? "text-cyan-700 dark:text-cyan-400" : "text-gray-900 dark:text-white"}`}>
+        <div class={`flex flex-col gap-2 transition-all duration-300 ${stage.active ? "p-4 -ml-4 rounded-xl bg-surface-soft/80 dark:bg-surface-soft-dark border border-border-subtle dark:border-border-subtle-dark/50" : ""}`}>
+          <h3 class={`text-lg font-bold leading-tight font-display ${stage.active ? "text-brand-primary dark:text-cyan-400" : "text-gray-900 dark:text-white"}`}>
             {stage.title}
           </h3>
-          <p class={`text-sm md:text-base leading-relaxed font-body font-medium ${stage.active ? "text-gray-900 dark:text-gray-200" : "text-gray-500 dark:text-gray-400"}`}>
+          <p class={`text-sm md:text-base leading-relaxed font-body font-normal ${stage.active ? "text-gray-900 dark:text-gray-200" : "text-text-muted dark:text-text-muted-dark"}`}>
             {stage.description}
           </p>
         </div>

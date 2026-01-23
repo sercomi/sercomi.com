@@ -5,7 +5,7 @@ import Button from "./Button.astro";
 ---
 
 <header
-  class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md dark:bg-gray-900/80 border-b border-gray-100 dark:border-gray-800"
+  class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md dark:bg-gray-900/80 border-b border-border-subtle dark:border-border-subtle-dark"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20">
@@ -15,14 +15,14 @@ import Button from "./Button.astro";
           <Logo className="h-10 w-10" />
         </div>
         <div
-          class="flex flex-col border-l border-gray-200 dark:border-gray-700 pl-3"
+          class="flex flex-col border-l border-border-subtle dark:border-border-subtle-dark pl-3"
         >
           <span
-            class="text-xl font-bold text-gray-900 dark:text-white leading-tight"
+            class="text-xl font-bold text-gray-900 dark:text-white leading-tight font-display"
             >Sergi Comas</span
           >
           <span
-            class="text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400 font-bold"
+            class="text-[10px] uppercase tracking-widest text-text-muted dark:text-text-muted-dark font-bold"
             >SENIOR SOFTWARE ENGINEER</span
           >
         </div>
@@ -45,7 +45,7 @@ import Button from "./Button.astro";
         <button
           id="mobile-menu-button"
           type="button"
-          class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          class="inline-flex items-center justify-center p-2 rounded-md text-text-muted hover:text-text-description hover:bg-surface-soft dark:hover:bg-surface-soft-dark transition-colors"
           aria-controls="mobile-menu"
           aria-expanded="false"
         >
@@ -72,21 +72,21 @@ import Button from "./Button.astro";
   <!-- Mobile Menu -->
   <div class="hidden md:hidden" id="mobile-menu">
     <div
-      class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800"
+      class="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 border-b border-border-subtle dark:border-border-subtle-dark"
     >
       <a
         href="#capacidades"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-surface-soft dark:hover:bg-surface-soft-dark"
         >Capacidades</a
       >
       <a
         href="#casos-de-uso"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-surface-soft dark:hover:bg-surface-soft-dark"
         >Casos de Uso</a
       >
       <a
         href="#procesos"
-        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-surface-soft dark:hover:bg-surface-soft-dark"
         >Procesos</a
       >
       <div class="pt-4 pb-2">

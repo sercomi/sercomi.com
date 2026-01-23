@@ -1,8 +1,11 @@
 # skills Specification
 
-## Purpose
-TBD - created by archiving change create-skills-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Purpose
+- **From**: TBD - created by archiving change create-skills-page. Update Purpose after archive.
+- **To**: Details the technical surface area and specialized technology stack, highlighting the "Spec-driven + AI" methodology.
+
+## MODIFIED Requirements
+
 ### Requirement: Skills Page Accessibility
 The site MUST have a dedicated page at `/skills` that details technical skills. All styling MUST use theme variables from the global design system.
 
@@ -39,6 +42,7 @@ The skills page MUST conclude with a clear call to action. All styling MUST use 
 - **And** it MUST have a button to schedule a call
 - **And** all styling uses semantic theme variables
 
+## ADDED Requirements
 ### Requirement: Design System Consistency
 The skills page MUST use only theme variables from the global design system and avoid hardcoded colors or font weights.
 
@@ -59,4 +63,3 @@ The skills page MUST use only theme variables from the global design system and 
 - **Then** the skills page uses the defined dark theme variables
 - **And** all text maintains proper contrast ratios
 - **And** interactive elements have clear dark mode states
-

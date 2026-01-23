@@ -10,9 +10,9 @@ const { href, variant = "primary", class: className } = Astro.props;
 const baseStyles =
     "inline-flex items-center justify-center px-6 py-2.5 rounded-lg font-semibold transition-all duration-200 text-sm";
 const variants = {
-    primary: "bg-cyan-900 text-white hover:bg-cyan-800 shadow-sm",
+    primary: "bg-brand-primary text-white hover:bg-brand-dark shadow-sm",
     secondary:
-        "bg-white text-gray-900 border border-gray-200 hover:bg-gray-50 shadow-sm dark:bg-gray-800 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700",
+        "bg-white text-gray-900 border border-border-subtle hover:bg-surface-soft shadow-sm dark:bg-gray-800 dark:text-white dark:border-border-subtle-dark dark:hover:bg-surface-soft-dark",
 };
 
 const Element = href ? "a" : "button";

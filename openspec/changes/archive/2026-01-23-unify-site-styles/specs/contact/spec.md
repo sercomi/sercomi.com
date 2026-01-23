@@ -1,8 +1,11 @@
 # contact Specification
 
-## Purpose
-TBD - created by archiving change create-contact-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Purpose
+- **From**: TBD - created by archiving change create-contact-page. Update Purpose after archive.
+- **To**: Provides a professional channel for B2B engagement, emphasizing high-fidelity communication and strategic alignment.
+
+## MODIFIED Requirements
+
 ### Requirement: Contact Page Accessibility
 The site MUST have a dedicated contact page at `/contact`. All styling MUST use theme variables from the global design system.
 
@@ -37,6 +40,7 @@ The contact page MUST communicate current availability. All styling MUST use the
 - **Then** I should see a notice about "Disponibilidad Limitada"
 - **And** all styling uses semantic theme variables
 
+## ADDED Requirements
 ### Requirement: Design System Consistency
 The contact page MUST use only theme variables from the global design system and avoid hardcoded colors or font weights.
 
@@ -57,4 +61,3 @@ The contact page MUST use only theme variables from the global design system and
 - **Then** the contact page uses the defined dark theme variables
 - **And** all text maintains proper contrast ratios
 - **And** interactive elements have clear dark mode states
-

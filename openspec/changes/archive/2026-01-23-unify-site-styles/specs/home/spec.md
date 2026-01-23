@@ -1,8 +1,11 @@
 # home Specification
 
-## Purpose
-TBD - created by archiving change create-home-page. Update Purpose after archive.
-## Requirements
+## MODIFIED Purpose
+- **From**: TBD - created by archiving change create-home-page. Update Purpose after archive.
+- **To**: Serves as the primary landing hub, summarizing the value proposition and directing traffic to specialized capabilities and successes.
+
+## MODIFIED Requirements
+
 ### Requirement: Hero Section Visibility
 The home page MUST show a hero section that clearly states the core value proposition: software engineering and AI. All styling MUST use theme variables from the global design system.
 
@@ -39,6 +42,7 @@ The home page MUST present a clear three-step methodology. All styling MUST use 
 - **And** they MUST be numbered and accompanied by icons
 - **And** all styling uses semantic theme variables
 
+## ADDED Requirements
 ### Requirement: Design System Consistency
 The home page MUST use only theme variables from the global design system and avoid hardcoded colors or font weights.
 
@@ -59,4 +63,3 @@ The home page MUST use only theme variables from the global design system and av
 - **Then** the home page uses the defined dark theme variables
 - **And** all text maintains proper contrast ratios
 - **And** interactive elements have clear dark mode states
-
