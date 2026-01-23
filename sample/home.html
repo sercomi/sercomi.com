@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Híbrido - Fondo Claro &amp; Minimalista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#176782", "primary-dark": "#1d4ed8", "background-light": "#f6f7f8", "background-off-white": "#f9fafb", "text-main": "#1f2937", "text-muted": "#6b7280", "card-border": "#e5e7eb", "accent-blue": "#3b82f6", "background-dark": "#121d20"}, fontFamily: {display: "Inter", body: ["Noto Sans", "sans-serif"]}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<style>
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(229, 231, 235, 0.8) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(229, 231, 235, 0.8) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background-light font-body text-text-main antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<header class="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/90 backdrop-blur-md">
+<div class="px-6 lg:px-20 h-20 flex items-center justify-between max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-text-main text-base font-bold leading-none tracking-tight">John Doe</h2>
+<span class="text-xs text-text-muted font-mono tracking-wide">SENIOR ENGINEER</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium" href="#capacidades">Capacidades</a>
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium" href="#casos">Casos de Uso</a>
+<a class="text-text-muted hover:text-primary transition-colors text-sm font-medium" href="#proceso">Proceso</a>
+</nav>
+<button class="hidden md:flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-all shadow-md hover:shadow-lg">
+                Hablemos
+            </button>
+<button class="md:hidden text-text-main">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col w-full pt-20">
+<section class="relative min-h-[85vh] flex items-center justify-center w-full px-6 lg:px-20 border-b border-gray-100 overflow-hidden bg-background-light">
+<div class="absolute inset-0 grid-bg pointer-events-none" style="mask-image: radial-gradient(circle at center, black 0%, transparent 80%); -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 80%);"></div>
+<div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-100/50 rounded-full blur-[100px] pointer-events-none opacity-60"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-indigo-100/50 rounded-full blur-[100px] pointer-events-none opacity-60"></div>
+<div class="relative max-w-4xl w-full text-center flex flex-col gap-8 items-center z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gray-200 bg-white shadow-sm">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-mono text-text-muted uppercase tracking-widest">Disponible para proyectos B2B</span>
+</div>
+<h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-text-main">
+                    Construyo software sólido.<br/>Lo potencio con IA.
+                </h1>
+<p class="text-lg md:text-xl text-text-muted max-w-2xl font-light leading-relaxed">
+                    Soluciones escalables y automatización inteligente para optimizar tu negocio, desde la arquitectura hasta la implementación de LLMs.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold transition-all shadow-lg shadow-blue-500/20 group">
+                        Ver cómo puedo ayudarte
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-white hover:bg-gray-50 border border-gray-200 text-text-main text-base font-medium transition-all shadow-sm">
+                        Ver Portfolio
+                    </button>
+</div>
+<div class="pt-12 flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2 text-sm text-text-muted font-mono"><span class="material-symbols-outlined text-lg text-gray-600">code</span> Python / Go</div>
+<div class="flex items-center gap-2 text-sm text-text-muted font-mono"><span class="material-symbols-outlined text-lg text-gray-600">cloud</span> AWS / Azure</div>
+<div class="flex items-center gap-2 text-sm text-text-muted font-mono"><span class="material-symbols-outlined text-lg text-gray-600">psychology</span> OpenAI / LangChain</div>
+<div class="flex items-center gap-2 text-sm text-text-muted font-mono"><span class="material-symbols-outlined text-lg text-gray-600">schema</span> Docker / K8s</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full bg-background-light" id="capacidades">
+<div class="flex flex-col mb-12">
+<h2 class="text-3xl font-display font-bold mb-4 text-text-main">Capacidades Técnicas</h2>
+<div class="h-1 w-20 bg-primary rounded"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group p-1 rounded-2xl bg-white border border-gray-200 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+<div class="bg-white h-full rounded-xl p-8 flex flex-col gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl text-text-main">architecture</span>
+</div>
+<div class="size-12 rounded-lg bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">deployed_code</span>
+</div>
+<div>
+<h3 class="text-2xl font-display font-bold text-text-main mb-2">Ingeniería de Software</h3>
+<p class="text-text-muted leading-relaxed">Arquitectura robusta para sistemas críticos. Desarrollo backend de alto rendimiento y diseño de microservicios escalables.</p>
+</div>
+<ul class="space-y-3 mt-auto border-t border-gray-100 pt-6">
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                API Design &amp; Integration
+                            </li>
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                High Scalability Infrastructure
+                            </li>
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                                Database Optimization (SQL/NoSQL)
+                            </li>
+</ul>
+</div>
+</div>
+<div class="group p-1 rounded-2xl bg-white border border-gray-200 hover:border-purple-200 hover:shadow-xl transition-all duration-300">
+<div class="bg-white h-full rounded-xl p-8 flex flex-col gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-9xl text-text-main">smart_toy</span>
+</div>
+<div class="size-12 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">auto_fix_high</span>
+</div>
+<div>
+<h3 class="text-2xl font-display font-bold text-text-main mb-2">Automatización e IA Aplicada</h3>
+<p class="text-text-muted leading-relaxed">Optimización de flujos de trabajo con inteligencia artificial. Integración de modelos de lenguaje en procesos de negocio.</p>
+</div>
+<ul class="space-y-3 mt-auto border-t border-gray-100 pt-6">
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-purple-500 text-sm">check_circle</span>
+                                LLM Integration (OpenAI, Anthropic)
+                            </li>
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-purple-500 text-sm">check_circle</span>
+                                RAG Pipelines for Knowledge Retrieval
+                            </li>
+<li class="flex items-center gap-3 text-gray-600">
+<span class="material-symbols-outlined text-purple-500 text-sm">check_circle</span>
+                                Workflow Automation (n8n, Make, Python)
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 w-full bg-background-off-white border-y border-gray-200" id="casos">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col mb-16 items-center text-center">
+<h2 class="text-3xl font-display font-bold mb-4 text-text-main">Casos de Uso</h2>
+<p class="text-text-muted max-w-xl">Resultados tangibles donde la ingeniería sólida se encuentra con la inteligencia artificial.</p>
+</div>
+<div class="flex flex-col gap-16">
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center group">
+<div class="w-full lg:w-3/5 relative rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white">
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10"></div>
+<div class="aspect-video bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract visualization of financial data streams and automation nodes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvwT4fLQcci4JeWZNDgs11lukDyMX-ypby_Oy5NhjG0ZLqrU_aBy0M1jrZgxpnHxYfXII-Jw6fZeC-oYSg-2okk7mT72FsW61jQmjvEPAHD8nZ-AJajC-RZKt9TgRGrbnQ6bbCmQs-T4Zn47hgAYbdm9_EKIO_lMnYnlWKZ7rEC74FJJVktGEeXB1yfDTFaoQPxG_L5d5yQF9w2AqUamnF9ouNgbNGNi02B38Yehvb84yCfiOkOmGOFFBne3gxdjovzBopXqyCc3c");'></div>
+<div class="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur border border-gray-200 px-4 py-2 rounded-lg flex items-center gap-3 shadow-sm">
+<span class="material-symbols-outlined text-green-600">trending_up</span>
+<span class="font-mono text-sm font-bold text-text-main">40% Reducción de Costos</span>
+</div>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-5">
+<span class="text-primary font-mono text-sm font-bold tracking-wider">FINTECH &amp; AUTOMATION</span>
+<h3 class="text-3xl font-display font-bold text-text-main">Procesamiento Inteligente de Documentos</h3>
+<p class="text-text-muted leading-relaxed">
+                                Desarrollo de un sistema híbrido que utiliza OCR tradicional combinado con GPT-4 para extraer, clasificar y validar datos de facturas financieras complejas con un 99.8% de precisión.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">Python</span>
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">AWS Textract</span>
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">LangChain</span>
+</div>
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:underline mt-2" href="#">
+                                Leer caso completo <span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 items-center group">
+<div class="w-full lg:w-3/5 relative rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white">
+<div class="absolute inset-0 bg-purple-500/5 group-hover:bg-transparent transition-colors z-10"></div>
+<div class="aspect-video bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Dashboard interface showing inventory metrics and AI prediction graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMvfC2aCrcInX4uR-99OQbjNR6fLEX1WS-PdlbZGnpYXtqxBrdKFKWPmOKoZB4JahtBMUIp0GujoYuimBk17s6MruUqe-jc76XxLx2dDDv580c4K22V6Cy7kLOMVP_nW_oCiGvDAg7L27zqxLc6W9GN-1dimkRFxFcwagnWbrRq_RejUdAuXlg2PxpYwolFPSa1PITdYBrub7ZvGEds4H9c1bvN7JIyv8ajPLWldKs_MeJDwFQZyQNREiG-rWyVwsz0Fz8qlA8a-s");'></div>
+<div class="absolute bottom-4 right-4 z-20 bg-white/90 backdrop-blur border border-gray-200 px-4 py-2 rounded-lg flex items-center gap-3 shadow-sm">
+<span class="material-symbols-outlined text-blue-600">timer</span>
+<span class="font-mono text-sm font-bold text-text-main">20h Ahorradas / Semana</span>
+</div>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-5">
+<span class="text-purple-600 font-mono text-sm font-bold tracking-wider">ECOMMERCE LOGISTICS</span>
+<h3 class="text-3xl font-display font-bold text-text-main">Orquestador de Inventario Predictivo</h3>
+<p class="text-text-muted leading-relaxed">
+                                Implementación de un sistema de agentes autónomos que monitorea niveles de stock en tiempo real y genera órdenes de compra predictivas basadas en tendencias históricas y estacionales.
+                            </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">Node.js</span>
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">n8n</span>
+<span class="px-3 py-1 text-xs font-mono bg-white border border-gray-200 rounded text-gray-600 shadow-sm">OpenAI API</span>
+</div>
+<a class="inline-flex items-center gap-2 text-purple-600 font-bold hover:underline mt-2" href="#">
+                                Leer caso completo <span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full bg-background-light" id="proceso">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-display font-bold mb-4 text-text-main">Del Caos a la Claridad</h2>
+<p class="text-text-muted">Mi metodología para transformar operaciones manuales en sistemas autónomos.</p>
+</div>
+<div class="relative">
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+<div class="bg-white p-6 border border-gray-200 rounded-xl flex flex-col items-center text-center gap-4 hover:border-primary shadow-sm hover:shadow-md transition-all">
+<div class="size-16 rounded-full bg-white border-4 border-gray-100 flex items-center justify-center text-primary shadow-sm mb-2">
+<span class="material-symbols-outlined text-3xl">search</span>
+</div>
+<h3 class="text-xl font-display font-bold text-text-main">1. Auditoría &amp; Estrategia</h3>
+<p class="text-sm text-gray-600">Análisis profundo de los procesos actuales. Identificación de cuellos de botella y oportunidades de alto impacto.</p>
+</div>
+<div class="bg-white p-6 border border-gray-200 rounded-xl flex flex-col items-center text-center gap-4 hover:border-primary shadow-sm hover:shadow-md transition-all">
+<div class="size-16 rounded-full bg-white border-4 border-gray-100 flex items-center justify-center text-primary shadow-sm mb-2">
+<span class="material-symbols-outlined text-3xl">build</span>
+</div>
+<h3 class="text-xl font-display font-bold text-text-main">2. Ingeniería Sólida</h3>
+<p class="text-sm text-gray-600">Desarrollo de la infraestructura base. APIs, bases de datos y seguridad antes de cualquier automatización.</p>
+</div>
+<div class="bg-white p-6 border border-gray-200 rounded-xl flex flex-col items-center text-center gap-4 hover:border-primary shadow-sm hover:shadow-md transition-all">
+<div class="size-16 rounded-full bg-white border-4 border-gray-100 flex items-center justify-center text-primary shadow-sm mb-2">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<h3 class="text-xl font-display font-bold text-text-main">3. Automatización IA</h3>
+<p class="text-sm text-gray-600">Implementación de agentes inteligentes y workflows automatizados que operan 24/7 sobre el sistema base.</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="border-t border-gray-200 bg-gray-50 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 lg:px-20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+<div class="max-w-md">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 rounded bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<span class="text-xl font-bold text-text-main">John Doe</span>
+</div>
+<p class="text-text-muted mb-6">
+                            Ingeniero de Software Senior especializado en la intersección de sistemas robustos e inteligencia artificial aplicada para negocios.
+                        </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">code</span>
+</a>
+<a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">work</span>
+</a>
+<a class="size-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-primary hover:text-white hover:border-primary transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-start md:items-end">
+<h3 class="text-2xl font-bold text-text-main">¿Listo para escalar?</h3>
+<p class="text-text-muted text-sm md:text-right max-w-xs">
+                            Agenda una llamada de descubrimiento de 15 minutos para ver si encajamos.
+                        </p>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-all shadow-lg shadow-blue-500/20 mt-2">
+<span class="truncate">Hablemos de tu proyecto</span>
+</button>
+</div>
+</div>
+<div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 text-sm">© 2024 John Doe Engineering. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Política de Privacidad</a>
+<a class="text-gray-500 hover:text-primary transition-colors text-sm" href="#">Términos de Servicio</a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

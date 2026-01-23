@@ -1,39 +1,14 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import Logo from "@/components/Logo.astro";
+import Hero from "@/components/home/Hero.astro";
+import Capabilities from "@/components/home/Capabilities.astro";
+import UseCases from "@/components/home/UseCases.astro";
+import Process from "@/components/home/Process.astro";
 ---
 
 <BaseLayout>
-  <section
-    class="py-20 flex flex-col items-center justify-center text-center px-4"
-  >
-    <div class="mb-12 flex flex-col items-center">
-      <Logo className="w-24 h-24 mb-6" />
-      <div class="text-center">
-        <h2
-          class="text-3xl font-bold text-gray-900 dark:text-white leading-tight uppercase tracking-tighter"
-        >
-          Sergi Comas
-        </h2>
-        <p
-          class="text-xs uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400 font-bold"
-        >
-          SENIOR SOFTWARE ENGINEER
-        </p>
-      </div>
-    </div>
-    <h1
-      class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
-    >
-      Construyo software sólido. <br class="hidden md:block" />
-      <span
-        class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600"
-        >Lo potencio con IA.</span
-      >
-    </h1>
-    <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mb-10">
-      Soluciones escalables y automatización inteligente para optimizar tu
-      negocio, desde la arquitectura hasta la implementación de LLMs.
-    </p>
-  </section>
+  <Hero />
+  <Capabilities />
+  <UseCases />
+  <Process />
 </BaseLayout>
