@@ -1,0 +1,110 @@
+---
+import TrajectoryTimeline from "./TrajectoryTimeline.astro";
+import ValueChips from "./ValueChips.astro";
+
+const abstractImageUrl =
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuARlpteZSBx-g1dOiv1HiK_N88U7Lm6xyaOyf35ZaxKjzPrUy4UXUr_dBKG5vfLvXOrsHmFBWbuAdE8Z8KUje7D5ubmhVLnpk3ETRccowGvxsz2u2fhXFlPPsCefDA82wcf-sv32XuP8o9bAEO01yoMkV-y4BM7PhdF0_xkJ3LD6n70emZQ9M3_6RSmmUG0YfXPfj3bMf09m9pZEWORpO7wx8HROG_k9u9bfoE4TwQw4RDrY0yyqqSOqvqORmjrtyrvLgPS1Ln1m3Y";
+---
+
+<div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+    <!-- Left Column: Visual Anchor -->
+    <div class="lg:col-span-5 order-2 lg:order-1 relative group">
+        <div
+            class="relative w-full aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-[2rem] shadow-2xl bg-gray-100 dark:bg-gray-800 border border-gray-200/50 dark:border-gray-700/50"
+        >
+            <!-- Overlay -->
+            <div
+                class="absolute inset-0 bg-cyan-900/10 z-10 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0"
+            >
+            </div>
+
+            <!-- Image Content (Using backgroundImage to match sample approach) -->
+            <div
+                class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-1000 group-hover:scale-110"
+                style={`background-image: url('${abstractImageUrl}');`}
+                aria-label="Abstract architectural system diagram"
+            >
+            </div>
+
+            <!-- Floating Badge -->
+            <div class="absolute bottom-6 left-6 right-6 z-20">
+                <div
+                    class="backdrop-blur-xl bg-white/80 dark:bg-black/60 p-5 rounded-2xl border border-white/20 dark:border-gray-800/50 shadow-xl"
+                >
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="size-8 rounded-lg bg-cyan-700 dark:bg-cyan-500 flex items-center justify-center text-white"
+                        >
+                            <span class="material-symbols-outlined text-[20px]"
+                                >terminal</span
+                            >
+                        </div>
+                        <span
+                            class="text-xs font-mono font-bold text-gray-700 dark:text-gray-300 tracking-tight"
+                            >system_architecture.v2</span
+                        >
+                    </div>
+                    <div
+                        class="h-1.5 w-full bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden"
+                    >
+                        <div
+                            class="h-full bg-cyan-700 dark:bg-cyan-500 w-3/4 animate-pulse"
+                        >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column: Narrative -->
+    <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col gap-8">
+        <div class="flex flex-col gap-4">
+            <div
+                class="flex items-center gap-2 text-cyan-700 dark:text-cyan-400 font-bold text-sm uppercase tracking-widest pl-1"
+            >
+                <span class="w-8 h-[1px] bg-cyan-700 dark:bg-cyan-400"></span>
+                <span>Sobre mí</span>
+            </div>
+            <h2
+                class="text-gray-900 dark:text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight"
+            >
+                Trayectoria y Visión
+            </h2>
+            <p
+                class="text-gray-600 dark:text-gray-400 text-lg font-medium leading-relaxed max-w-2xl"
+            >
+                Ingeniero de Software Senior con una década de experiencia
+                construyendo sistemas robustos. Mi evolución hacia la IA y la
+                automatización no es una tendencia, es el siguiente paso lógico
+                hacia la eficiencia y el impacto empresarial real.
+            </p>
+        </div>
+
+        <TrajectoryTimeline />
+
+        <div
+            class="flex flex-col gap-8 pt-8 border-t border-gray-100 dark:border-gray-800"
+        >
+            <ValueChips />
+
+            <div class="flex justify-start">
+                <a
+                    href="https://linkedin.com/in/sercomi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group inline-flex items-center justify-center gap-3 h-14 px-8 bg-cyan-700 dark:bg-cyan-600 hover:bg-cyan-800 dark:hover:bg-cyan-500 text-white rounded-xl shadow-lg shadow-cyan-900/20 transition-all hover:-translate-y-1 font-bold text-base"
+                >
+                    <span class="material-symbols-outlined text-[22px]"
+                        >person_add</span
+                    >
+                    <span>Conectar en LinkedIn</span>
+                    <span
+                        class="material-symbols-outlined text-white/50 text-[18px] group-hover:translate-x-1 transition-transform"
+                        >arrow_forward</span
+                    >
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

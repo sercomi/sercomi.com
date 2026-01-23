@@ -1,0 +1,22 @@
+---
+const values = [
+    { icon: "verified", label: "Seniority" },
+    { icon: "build", label: "Pragmatismo" },
+    { icon: "trending_up", label: "Orientación a Negocio" },
+];
+---
+
+<div class="flex flex-wrap gap-3">
+    {
+        values.map((val) => (
+            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-cyan-50 dark:bg-gray-800 px-4 transition-colors hover:bg-cyan-100 dark:hover:bg-gray-700">
+                <span class="material-symbols-outlined text-cyan-700 dark:text-cyan-400 text-[18px]">
+                    {val.icon}
+                </span>
+                <p class="text-gray-900 dark:text-gray-200 text-xs font-semibold uppercase tracking-wide">
+                    {val.label}
+                </p>
+            </div>
+        ))
+    }
+</div>
